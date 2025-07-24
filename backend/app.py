@@ -3,7 +3,7 @@ import random
 app = Flask(__name__)
 @app.route('/health')
 def health():
-return jsonify({"status": "UP"})
+return jsonify({"status": "SYSTEM HEALTH OK"})
 @app.route('/metrics')
 def metrics():
 return jsonify({
